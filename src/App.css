@@ -1,46 +1,90 @@
+/* App.css */
+
+/* General Styles */
 .App {
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #f9f9f9;
+  padding: 20px;
 }
 
 .App-header {
-  background-color: #282c34;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Character Card Styles */
+.character-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px auto;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.character-section {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.attribute-row, .skill-row {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 5px 0;
+}
+
+.class-list {
+  list-style: none;
+  padding: 0;
+}
+
+.class-list li {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.class-list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Modifier Buttons */
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-.App-section {
-  flex: 1 1 0;
-  background-color: hsl(220deg 13% 13%);
-  color: white;
+button:hover {
+  background-color: #0056b3;
 }
 
-.App-link {
-  color: #61dafb;
+/* Selected Class Section */
+.selected-class {
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected-class h4 {
+  color: #007bff;
 }
